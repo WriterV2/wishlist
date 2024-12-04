@@ -5,4 +5,5 @@ edition = "2021"
 
 [dependencies]
 dotenvy = "0.15.7"
-sqlx = { version = "0.8.2", features = ["macros", "sqlite"] }
+sqlx = { version = "0.8.2", features = ["macros", "runtime-tokio", "sqlite", "tls-native-tls"] }
+tokio = { version = "1.42.0", features = ["full"] }
